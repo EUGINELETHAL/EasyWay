@@ -46,16 +46,58 @@
 <a class="instagram" href="#"><i class="lni-instagram-filled"></i></a>
 <a class="linkedin" href="#"><i class="lni-linkedin-fill"></i></a>
 <a class="google" href="#"><i class="lni-google-plus"></i></a>
-</div>
-<div class="header-top-right float-right">
-<a href="login.html" class="header-top-button"><i class="lni-lock"></i> Log In</a> |
-<a href="register.html" class="header-top-button"><i class="lni-pencil"></i> Register</a>
-</div>
-</div>
-</div>
-</div>
+<div class="text-center">
+	<!-- Button HTML (to Trigger Modal) -->
+	<a href="#myModal" class="trigger-btn" data-toggle="modal">Click to Open Login Modal</a>
 </div>
 
+<!-- Modal HTML -->
+<div id="myModal" class="modal fade">
+	<div class="modal-dialog modal-login">
+		<div class="modal-content">
+			<form class="login-form">
+				<div class="modal-header">				
+					<h4 class="modal-title">Login</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">				
+					<div class="form-group">
+                        <div class="input-icon">
+                        <i class="lni-user"></i>
+                        <input type="text" id="Name" class="form-control" name="email" placeholder="Username">
+                        </div>
+                        </div>
+					<div class="form-group">
+						<div class="clearfix">
+							<label>Password</label>
+							<a href="#" class="pull-right text-muted"><small>Forgot?</small></a>
+						</div>
+						
+						<input type="password" class="form-control" required="required">
+					</div>
+				</div>
+				<div class="modal-footer">
+					<label class="checkbox-inline pull-left"><input type="checkbox"> Remember me</label>
+					<input type="submit" class="btn btn-primary pull-right" value="Login">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>  
+
+</div>
+<div class="header-top-right float-right">
+<a href="#myModal" data-toggle="modal" class="header-top-button"><i class="lni-lock"></i> Log In</a> |
+<a href="" class="header-top-button" data-toggle="modal" data-target="#modalRegisterForm"></a> <i class="lni-pencil"></i> Register</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center">
+  <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalRegisterForm">Launch
+    Modal Register Form</a>
+  </div>
 
 <nav class="navbar navbar-expand-lg bg-white fixed-top scrolling-navbar">
 <div class="container">
@@ -87,7 +129,7 @@ Categories
 </li>
  <li class="nav-item dropdown">
 <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-Listings
+How it Works
 </a>
 <div class="dropdown-menu">
 <a class="dropdown-item" href="adlistinggrid.html">Ad Grid</a>
@@ -148,7 +190,7 @@ Home
 </li>
 <li>
 <a href="#">
-Listings
+How it Works
 </a>
 <ul class="dropdown">
 <li><a href="adlistinggrid.html">Ad Grid</a></li>
@@ -244,6 +286,78 @@ Listings
 </header>
 
 
+<section id="pricing-table" class="section-padding">
+    <div class="container">
+    <div class="row">
+    <div class="col-12">
+    <h2 class="section-title">Pricing Plan</h2>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+    <div class="table">
+    <div class="icon">
+    <i class="lni-gift"></i>
+    </div>
+    <div class="pricing-header">
+    <p class="price-value">$29</p>
+    </div>
+    <div class="title">
+    <h3>Basic</h3>
+    </div>
+    <ul class="description">
+    <li>Free ad posting</li>
+    <li>No Featured ads availability</li>
+    <li>Access to limited features</li>
+    <li>For 30 days</li>
+    <li>100% Secure!</li>
+    </ul>
+    <button class="btn btn-common">Purchase</button>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+    <div class="table" id="active-tb">
+    <div class="icon">
+    <i class="lni-leaf"></i>
+    </div>
+    <div class="pricing-header">
+    <p class="price-value">$49</p>
+    </div>
+    <div class="title">
+    <h3>Standard</h3>
+    </div>
+    <ul class="description">
+    <li>Free ad posting</li>
+    <li>10 Featured ads availability</li>
+    <li>Access to unlimited features</li>
+    <li>For 30 days</li>
+    <li>100% Secure!</li>
+    </ul>
+    <button class="btn btn-common">Purchase</button>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-6 col-xs-12">
+    <div class="table">
+    <div class="icon">
+    <i class="lni-layers"></i>
+    </div>
+    <div class="pricing-header">
+    <p class="price-value">$69</p>
+    </div>
+    <div class="title">
+    <h3>Premium</h3>
+    </div>
+    <ul class="description">
+    <li>Free ad posting</li>
+    <li>100 Featured ads availability</li>
+    <li>Access to unlimited features</li>
+    <li>For 30 days</li>
+    <li>100% Secure!</li>
+    </ul>
+    <button class="btn btn-common">Purchase</button>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
 <section id="categories">
 <div class="container">
 <div class="row justify-content-center">
@@ -880,78 +994,6 @@ Listings
 
 
 
-<section id="pricing-table" class="section-padding">
-<div class="container">
-<div class="row">
-<div class="col-12">
-<h2 class="section-title">Pricing Plan</h2>
-</div>
-<div class="col-lg-4 col-md-6 col-xs-12">
-<div class="table">
-<div class="icon">
-<i class="lni-gift"></i>
-</div>
-<div class="pricing-header">
-<p class="price-value">$29</p>
-</div>
-<div class="title">
-<h3>Basic</h3>
-</div>
-<ul class="description">
-<li>Free ad posting</li>
-<li>No Featured ads availability</li>
-<li>Access to limited features</li>
-<li>For 30 days</li>
-<li>100% Secure!</li>
-</ul>
-<button class="btn btn-common">Purchase</button>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 col-xs-12">
-<div class="table" id="active-tb">
-<div class="icon">
-<i class="lni-leaf"></i>
-</div>
-<div class="pricing-header">
-<p class="price-value">$49</p>
-</div>
-<div class="title">
-<h3>Standard</h3>
-</div>
-<ul class="description">
-<li>Free ad posting</li>
-<li>10 Featured ads availability</li>
-<li>Access to unlimited features</li>
-<li>For 30 days</li>
-<li>100% Secure!</li>
-</ul>
-<button class="btn btn-common">Purchase</button>
-</div>
-</div>
-<div class="col-lg-4 col-md-6 col-xs-12">
-<div class="table">
-<div class="icon">
-<i class="lni-layers"></i>
-</div>
-<div class="pricing-header">
-<p class="price-value">$69</p>
-</div>
-<div class="title">
-<h3>Premium</h3>
-</div>
-<ul class="description">
-<li>Free ad posting</li>
-<li>100 Featured ads availability</li>
-<li>Access to unlimited features</li>
-<li>For 30 days</li>
-<li>100% Secure!</li>
-</ul>
-<button class="btn btn-common">Purchase</button>
-</div>
-</div>
-</div>
-</div>
-</section>
 
 
 <!-- <section class="testimonial section-padding">
@@ -1128,31 +1170,6 @@ Reprehenderit nemo quod tempore doloribus ratione distinctio quis quidem vitae s
 </section> -->
 
 
-<section class="subscribes section-padding">
-<div class="container">
-<div class="row">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-<div class="subscribes-inner">
-<div class="icon">
-<i class="lni-pointer"></i>
-</div>
-<div class="sub-text">
-<h3>Subscribe to Newsletter</h3>
-<p>and receive new ads in inbox</p>
-</div>
-</div>
-</div>
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-<form>
-<div class="subscribe">
-<input class="form-control" name="EMAIL" placeholder="Enter your Email" required="" type="email">
-<button class="btn btn-common" type="submit">Subscribe</button>
-</div>
-</form>
-</div>
-</div>
-</div>
-</section>
 
 
 <footer>
